@@ -17,4 +17,4 @@ ansible-playbook -i inventory/ -e "action=revoke" playbooks/ssh.yml
 ## Notes
  - Under [instances] group in inventory/hosts files please make sure to add IPs or DNS of target instances.
  - Update the varibale "user_name" and "user_des" as per requirements. You can add multiple values as well to run the action for mutiple users at a time.
- - Make sure to put SSH pub key under "sshkeys" directory.
+ - Make sure to create a directory under "sshkeys" directory of same name as user name and put its SSH pub key under it.
